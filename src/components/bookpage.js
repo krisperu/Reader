@@ -1,9 +1,9 @@
 import React from 'react'
 
-function bookpage() {
+function Bookpage() {
   return (
-    <div>bookpage</div>
+    <div>Bookpage</div>
   )
 }
 
-export default bookpage
+export default Bookpage

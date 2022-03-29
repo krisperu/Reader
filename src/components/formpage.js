@@ -1,9 +1,9 @@
 import React from 'react'
 
-function formpage() {
+function Formpage() {
   return (
-    <div>formpage</div>
+    <div>Formpage</div>
   )
 }
 
-export default formpage
+export default Formpage
