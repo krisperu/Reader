@@ -37,14 +37,14 @@ function NavBar() {
         </NavLink>
         <NavLink 
             className="nav-bar"
-            to="/bookdetail"
+            to="/author"
             exact
             style={linkStyles}
             activeStyle={{
                 background: "#BE8BFF", 
                 borderRadius: "25px",
             }}
-        >Book
+        >Authors
         </NavLink>
         <NavLink 
             className="nav-bar"
@@ -55,7 +55,7 @@ function NavBar() {
                 background: "#BE8BFF", 
                 borderRadius: "25px",
             }}
-        >Form
+        >Add a Book
         </NavLink>
     </div>
   )

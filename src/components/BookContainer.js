@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BookContainer({ id, image, title, description, length, reading, rating, comment, author, genre }) {
+function BookContainer({ id, image, title}) {
   return (
     <div className="card">
     <div className="image">

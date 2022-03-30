@@ -4,9 +4,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #DFDFE1;
+  color: #A3A9AA;
+  color: #C3FDD6;
+  color: #769392;
+  color: #0B132B;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
