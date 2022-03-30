@@ -16,3 +16,50 @@ code {
     monospace;
 }
 
+/* homepage */
+.homepage {
+  background-image: url("./images/homepage-header.jpg");
+  padding: 7rem;
+}
+
+.nav {
+  text-align: left;
+}
+
+.title {
+  background-color: rgb(163, 169, 170, .9);
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+  background-color: rgb(163, 169, 170, .9);
+}
+  
+.cover-image {
+  position: relative;
+  width: 300px;     
+  height: 300px;
+  overflow: hidden;
+}
+
+.button {
+  color: #C3FDD6;
+}
+ /* img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    top: 50%;     
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+ img.landscape {
+   height: 100%;
+   width: auto;
+} */
+

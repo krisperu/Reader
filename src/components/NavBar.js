@@ -5,23 +5,24 @@ const linkStyles = {
     display: "inline-block",
     padding: "12px",
     margin: "0 6px 6px",
-    background: "#D4F4DD",
+    background: "#A3A9AA",
     textDecoration: "none",
     color: "black",
+}
+const activeStyle = {
+    background: "#C3FDD6", 
+    borderRadius: "5px",
 }
 
 function NavBar() {
   return (
-    <div>
+    <div className="nav">
         <NavLink 
             className="nav-bar"
             to="/"
             exact
             style={linkStyles}
-            activeStyle={{
-                background: "#BE8BFF", 
-                borderRadius: "25px",
-            }}
+            activeStyle={activeStyle}
         >Home
         </NavLink>
         <NavLink 
@@ -29,10 +30,7 @@ function NavBar() {
             to="/books"
             exact
             style={linkStyles}
-            activeStyle={{
-                background: "#BE8BFF", 
-                borderRadius: "25px",
-            }}
+            activeStyle={activeStyle}
         >Books
         </NavLink>
         <NavLink 
@@ -40,10 +38,7 @@ function NavBar() {
             to="/author"
             exact
             style={linkStyles}
-            activeStyle={{
-                background: "#BE8BFF", 
-                borderRadius: "25px",
-            }}
+            activeStyle={activeStyle}
         >Authors
         </NavLink>
         <NavLink 
@@ -51,10 +46,7 @@ function NavBar() {
             to="/bookform"
             exact
             style={linkStyles}
-            activeStyle={{
-                background: "#BE8BFF", 
-                borderRadius: "25px",
-            }}
+            activeStyle={activeStyle}
         >Add a Book
         </NavLink>
     </div>
