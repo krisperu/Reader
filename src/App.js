@@ -48,7 +48,7 @@ function App() {
           <Authorpage author = {author}/>
         </Route>
         <Route path = "/bookform">
-          <Formpage />
+          <Formpage books={books} setBooks={setBooks}/>
         </Route>
       </Switch>
     </div>
