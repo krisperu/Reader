@@ -13,7 +13,7 @@ function Bookspage({ books }) {
     </div>
   ))
   return (
-    <div>Bookspage Test {bookItem}</div>
+    <div className="container">{bookItem}</div>
   )
 }
 

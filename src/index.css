@@ -63,3 +63,18 @@ code {
    width: auto;
 } */
 
+/* bookspage */
+.card {
+  width: 18rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .book-container {
+
+} */
+
+.card-body {
+  border-top: 20px solid #DFDFE1;
+  border-left: 35px solid #DFDFE1;
+}
