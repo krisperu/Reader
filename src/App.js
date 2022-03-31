@@ -36,7 +36,7 @@ function App() {
 
   function onCardClick(book) {
     history.push('/bookdetail')
-    setBookDetail([book])
+    setBookDetail(book)
   }
 
   function handleDeleteBook(deletedBook) {
