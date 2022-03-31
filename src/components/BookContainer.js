@@ -1,17 +1,26 @@
 import React from 'react'
 
-function BookContainer({ id, image, title }) {
+function BookContainer({ book, onDeleteBook }) {
+
+  function handleDeleteClick(e) {
+    e.stopPropagation()
+    fetch(`http://localhost:9292/books//${book.id}`, {
+      method: "DELETE",
+    })
+      .then((r) => r.json())
+      .then(() => onDeleteBook(book));
+  }
 
   return (
     <div>
       <div className="card">
         <div className="image">
-          <img className="card-img-top" src={image} alt={id} />
+          <img className="card-img-top" src={book.image} alt={book.id} />
         </div>
         <div className="card-title">
-          <strong>{title}</strong>
+          <strong>{book.title}</strong>
         </div>
-        <button>Delete</button>
+        <button onClick={handleDeleteClick}>Delete</button>
       </div>
     </div>
     

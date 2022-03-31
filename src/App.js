@@ -31,6 +31,11 @@ function App() {
     .then(setAuthor)
   }, [])
 
+  function handleDeleteBook(deletedBook) {
+    const updatedBooks = books.filter((book) => book !== deletedBook)
+    setBooks(updatedBooks)
+  }
+
   return (
     <div>
        <NavBar />
@@ -39,7 +44,7 @@ function App() {
           <Homepage bookCover = {bookCover}/>
         </Route>
         <Route exact path="/books">
-          <Bookspage books={books} setBooks={setBooks}/>
+          <Bookspage books={books} onDeleteBook={handleDeleteBook} />
         </Route>
         <Route path = "/bookdetail">
           <BookDetail />
