@@ -1,23 +1,19 @@
 import React from 'react'
 import BookContainer from './BookContainer'
 
-function Bookspage({ books, onDeleteBook }) {
+function Bookspage({ books, onDeleteBook, onCardClick }) {
   const bookItem = books.map((book) => (
     <div key={book.id}>
       <BookContainer 
         book={book}
         onDeleteBook={onDeleteBook}
+        handleCardClick = {onCardClick}
       />
     </div>
   ))
 
-  function handleClick() {
-    console.log(`Click works`)
-  }
-
-
   return (
-    <div className="container" onClick={handleClick}>
+    <div >
       {bookItem}
       
       </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Switch, Route} from 'react-router-dom'
+import {useHistory} from "react-router-dom";
 import NavBar from './components/NavBar'
 import Homepage from './components/Homepage'
 import Bookspage from './components/Bookspage'
@@ -9,9 +10,11 @@ import Formpage from './components/Formpage'
 
 function App() {
   const baseUrl = "http://localhost:9292"
+  const history = useHistory()
   const [books, setBooks] = useState([])
   const [author, setAuthor] = useState([])
   const [bookCover, setBookCover] = useState([])
+  const [bookDetail, setBookDetail] = useState([])
   
     useEffect(() => {
       fetch(baseUrl)
@@ -31,6 +34,11 @@ function App() {
     .then(setAuthor)
   }, [])
 
+  function onCardClick(book) {
+    history.push('/bookdetail')
+    setBookDetail([book])
+  }
+
   function handleDeleteBook(deletedBook) {
     const updatedBooks = books.filter((book) => book !== deletedBook)
     setBooks(updatedBooks)
@@ -41,16 +49,29 @@ function App() {
        <NavBar />
       <Switch>
         <Route exact path="/">
-          <Homepage bookCover = {bookCover}/>
+          <Homepage 
+            bookCover = {bookCover}
+            books = {books}
+            onCardClick={onCardClick}
+          />
         </Route>
         <Route exact path="/books">
-          <Bookspage books={books} onDeleteBook={handleDeleteBook} />
+          <Bookspage 
+            books={books} 
+            onDeleteBook={handleDeleteBook}
+            onCardClick={onCardClick}
+          />
         </Route>
         <Route path = "/bookdetail">
-          <BookDetail />
+          <BookDetail 
+            books={books} 
+            detail={bookDetail}
+          />
         </Route>
         <Route path = "/author">
-          <Authorpage author = {author}/>
+          <Authorpage 
+            author = {author}
+          />
         </Route>
         <Route path = "/bookform">
           <Formpage books={books} setBooks={setBooks}/>

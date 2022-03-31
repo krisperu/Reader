@@ -1,8 +1,11 @@
 import React from 'react'
 
-function BookDetail() {
+function BookDetail({ detail }) {
+  const deets = detail[0]
   return (
-    <div>BookDetail</div>
+    <div key={deets.id}>
+       <h1>{deets.title}</h1>
+     </div>
   )
 }
 

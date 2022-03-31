@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Homepage({bookCover}) {
   const coverImage = bookCover.map((cover) => (
-    <div className="cover-image"><img src={cover.image} ></img></div>
+    <div key={cover.image} className="cover-image"><img src={cover.image} ></img></div>
   ))
   return (
     <div className="homepage">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BookContainer({ book, onDeleteBook }) {
+function BookContainer({ book, onDeleteBook, handleCardClick }) {
 
   function handleDeleteClick(e) {
     e.stopPropagation()
@@ -12,7 +12,7 @@ function BookContainer({ book, onDeleteBook }) {
   }
 
   return (
-    <div>
+    <div onClick={()=> handleCardClick(book)}>
       <div className="card">
         <div className="image">
           <img className="card-img-top" src={book.image} alt={book.id} />
