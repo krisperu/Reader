@@ -1,15 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AuthorCard from './AuthorCard'
 
 function Authorpage({ author }) {
     const authorItem = author.map((auth) => (
-  <div class="card w-75" key={auth.id}>
-    <div class="card-body">
-      <h5 class="card-title">{auth.name}</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Button</a>
-    </div>
-  </div>
+      <AuthorCard key={auth.id} auth={auth} books={auth.books.map((b) => b.title)}/>
+      
     ))
 
   return (
