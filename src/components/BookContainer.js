@@ -1,6 +1,7 @@
 import React from 'react'
 
-function BookContainer({ id, image, title}) {
+function BookContainer({ id, image, title }) {
+
   return (
     <div>
       <div className="card">
@@ -10,6 +11,7 @@ function BookContainer({ id, image, title}) {
         <div className="card-title">
           <strong>{title}</strong>
         </div>
+        <button>Delete</button>
       </div>
     </div>
     

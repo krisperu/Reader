@@ -12,6 +12,12 @@ function App() {
   const [books, setBooks] = useState([])
   const [author, setAuthor] = useState([])
   const [bookCover, setBookCover] = useState([])
+  
+    useEffect(() => {
+      fetch(baseUrl)
+      .then(r => r.json())
+      .then(setBookCover)
+    }, [])
 
   useEffect(() => {
     fetch(baseUrl + '/books')
@@ -25,12 +31,6 @@ function App() {
     .then(setAuthor)
   }, [])
 
-  useEffect(() => {
-    fetch(baseUrl)
-    .then(r => r.json())
-    .then(setBookCover)
-  }, [])
-
   return (
     <div>
        <NavBar />
@@ -39,7 +39,7 @@ function App() {
           <Homepage bookCover = {bookCover}/>
         </Route>
         <Route exact path="/books">
-          <Bookspage books = {books}/>
+          <Bookspage books={books} setBooks={setBooks}/>
         </Route>
         <Route path = "/bookdetail">
           <BookDetail />

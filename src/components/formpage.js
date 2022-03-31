@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 function Formpage({ books, setBooks }) {
   const [title, setTitle] = useState('')
+  const [author, setAuthor] = useState('')
+  const [genre, setGenre] = useState('')
   const [length, setLength] = useState('')
   const [reading, setReading] = useState('')
   const [image, setImage] = useState('')
@@ -16,18 +18,20 @@ function Formpage({ books, setBooks }) {
   function handleSubmit(e) {
     e.preventDefault();
     const newBook = {
-      title: title,
-      length: length,
-      reading: reading,
-      image: image,
-      description: description,
-      rating: rating,
-      comment: comment
+      title ,
+      author ,
+      genre ,
+      length ,
+      reading_time: reading,
+      image ,
+      description ,
+      rating ,
+      comment ,
     };
     fetch("http://localhost:9292/books", {
           method: "POST",
           headers: {
-              'Content-Type': 'application/json',
+           'Content-Type': 'application/json',
         },
         body: JSON.stringify(newBook),
       })
@@ -44,6 +48,24 @@ function Formpage({ books, setBooks }) {
           title="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+        />
+      </label>
+      <label>
+        Author:
+        <input 
+          type="text"
+          author="author"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
+      </label>
+      <label>
+        Genre:
+        <input 
+          type="text"
+          genre="genre"
+          value={genre}
+          onChange={(e) => setGenre(e.target.value)}
         />
       </label>
       <label>
