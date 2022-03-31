@@ -46,6 +46,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="text"
           title="title"
+          placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
@@ -55,6 +56,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="text"
           author="author"
+          placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
@@ -64,6 +66,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="text"
           genre="genre"
+          placeholder="Genre"
           value={genre}
           onChange={(e) => setGenre(e.target.value)}
         />
@@ -73,6 +76,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="number"
           length="length"
+          placeholder="How many pages..."
           value={length}
           onChange={(e) => setLength(e.target.value)}
         />
@@ -82,6 +86,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="number"
           reading="reading"
+          placeholder="day(s)"
           value={reading}
           onChange={(e) => setReading(e.target.value)}
         />
@@ -91,6 +96,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="text"
           image="image"
+          placeholder="Image URL"
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
@@ -100,6 +106,7 @@ function Formpage({ books, setBooks }) {
         <textarea
           description="description"
           value={description}
+          placeholder="Book summary"
           onChange={(e) => setDescription(e.target.value)}
         />
       </label>
@@ -108,6 +115,7 @@ function Formpage({ books, setBooks }) {
         <input 
           type="number"
           rating="rating"
+          placeholder="1-5"
           value={rating}
           onChange={(e) => setRating(e.target.value)}
         />
@@ -116,6 +124,7 @@ function Formpage({ books, setBooks }) {
         Comment/Review:
         <textarea
           comment="comment"
+          placeholder="What did you think?"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
         />

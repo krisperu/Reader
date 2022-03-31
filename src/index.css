@@ -5,6 +5,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #DFDFE1;
+  
+}
+
+.random {
   color: #A3A9AA;
   color: #C3FDD6;
   color: #769392;
@@ -16,35 +20,35 @@ code {
     monospace;
 }
 
+.nav {
+  text-align: left;
+}
+
 /* homepage */
 .homepage {
   background-image: url("./images/homepage-header.jpg");
   padding: 7rem;
 }
 
-.nav {
-  text-align: left;
-}
-
 .title {
   background-color: rgb(163, 169, 170, .9);
 }
 
-.carousel {
+/* .carousel {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
   background-color: rgb(163, 169, 170, .9);
-}
+} */
   
-.cover-image {
+/* .cover-image {
   position: relative;
   width: 300px;     
   height: 300px;
   overflow: hidden;
-}
+} */
 
 .button {
   color: #C3FDD6;
@@ -74,7 +78,7 @@ code {
 
 } */
 
-.card-body {
+/* .card-body {
   border-top: 20px solid #DFDFE1;
   border-left: 35px solid #DFDFE1;
-}
+} */
