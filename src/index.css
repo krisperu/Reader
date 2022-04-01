@@ -85,6 +85,11 @@ h3 {
   height: 510px;
 }
 
+.card-img {
+  width: 275px;
+  height: 420px;
+}
+
 div::-webkit-scrollbar {
   width: 2px;
 }
