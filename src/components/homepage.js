@@ -7,7 +7,6 @@ function Homepage({bookCover}) {
     <div key={cover.id}><BookCover image = {cover.image}/></div>
   ))
 
-
   return (
     <div className="homepage position-relative">
       <div className="home-back">

@@ -10,10 +10,32 @@ Reader is a place to keep track of the books you've read. It keeps track of the 
 - See all the books you've reader
 - See more details on each book
 
-## Demo
+# Demo
 
-![picture](https://picsum.photos/200/300?grayscale0)
+## Homepage
+The landing page. It provides an array of books that have been added. A new array rerenders with each rerendering of the app.
 
+![homepage](/images/homepage.png)
+
+## All Books
+All the books that have been added are shown on this page. Clicking on any of the books will bring you to the book detail page. You can delete the any book from this page.
+
+![homepage](/images/all-books.png)
+
+## Book Detail
+All of the chosen book details are shown on this page. 
+
+![homepage](/images/book-detail.png)
+
+## Authors
+All the added authors and their associated books are protrayed on this page.
+
+![homepage](/images/author.png)
+
+## Form
+Add a book after you finish reading it. Add a rating and any comments you have about the book.
+
+![homepage](/images/form.png)
 ## Setup
 
 - Clone the repository to your local machine
@@ -40,14 +62,8 @@ Backend: https://github.com/krisperu/phase-3-project-backend
 - SQL
 - Active Record
 - [Bootstrap](https://getbootstrap.com/)
-- [Flickity](https://flickity.metafizzy.co/).
 
 ## Contact
 Created by: Kristina Peru
 [GitHub](https://github.com/krisperu)
 [LinkedIn](https://www.linkedin.com/in/kristina-peru-205557189)
-
-
-
-
-
