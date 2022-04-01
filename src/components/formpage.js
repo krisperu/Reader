@@ -41,6 +41,7 @@ function Formpage({ books, setBooks }) {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <h2>Add a Book</h2>
       <div className="tit">
         <label for="exampleFormControlInput1" className="form-label">
           Title:
