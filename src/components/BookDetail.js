@@ -1,14 +1,12 @@
 import React from 'react'
 
 function BookDetail({ detail }) {
-  console.log(detail)
-
   return (
     <div key={detail.id}>
        <img src={detail.image} />
        <h1>{detail.title}</h1>
-       {/* <div>{detail.author.name}</div> */}
-       {/* <div>{detail.genre.genre}</div> */}
+       <div>{detail.author.name}</div>
+       <div>{detail.genre.genre}</div>
        <div>{detail.length} pages</div>
        <div>{detail.reading_time} day(s) to read</div>
        <div>{detail.description}</div>
@@ -19,3 +17,4 @@ function BookDetail({ detail }) {
 }
 
 export default BookDetail
+

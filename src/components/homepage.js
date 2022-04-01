@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import BookCover from './BookCover'
 
 function Homepage({bookCover}) {
   const coverImage = bookCover.map((cover) => (
-    <div key={cover.image} className="cover-image"><img src={cover.image} ></img></div>
+    <div key={cover.id}><BookCover image = {cover.image}/></div>
   ))
+
+
   return (
     <div className="homepage">
       <h1 className="title">Reader</h1>

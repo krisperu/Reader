@@ -32,16 +32,22 @@ code {
 
 .title {
   background-color: rgb(163, 169, 170, .9);
+  width: 30%;
 }
 
-/* .carousel {
+.carousel {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
-  background-color: rgb(163, 169, 170, .9);
-} */
+  background-color: rgb(11, 19, 43, .9);
+}
+
+.car-img {
+  padding: 10px;
+  width: 350px;
+}
   
 /* .cover-image {
   position: relative;

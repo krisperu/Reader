@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+  import React, { useState, useEffect } from 'react'
 import { Switch, Route} from 'react-router-dom'
 import {useHistory} from "react-router-dom";
 import NavBar from './components/NavBar'
@@ -51,8 +51,6 @@ function App() {
         <Route exact path="/">
           <Homepage 
             bookCover = {bookCover}
-            books = {books}
-            onCardClick={onCardClick}
           />
         </Route>
         <Route exact path="/books">
