@@ -1,10 +1,11 @@
+/* app */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #DFDFE1;
+  background-color: rgba(53, 56, 48);
   
 }
 
@@ -13,6 +14,7 @@ body {
   color: #C3FDD6;
   color: #769392;
   color: #0B132B;
+  color: #6c7957;
 }
 
 code {
@@ -20,21 +22,58 @@ code {
     monospace;
 }
 
-.nav {
-  text-align: left;
+.footer {
+  color: #DFDFE1;
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* homepage */
+.logo {
+  color: rgba(53, 56, 48, 0.9);
+  -webkit-text-stroke: 1px #A3A9AA;
+  padding-right: 2em;
+}
+
+.nav {
+  height: 75%;
+}
+
 .homepage {
-  background-image: url("./images/header-img.jpg");
+  background-image: url("../images/header-img.jpg");
   padding: 7rem;
 }
 
+.home-back {
+  background-color: rgb(65, 68, 61, .9);
+  text-align: center;
+}
+
 .title {
-  background-color: rgb(11, 19, 43, .9);
-  width: 35%;
-  color: #0B132B;
+  color: rgba(53, 56, 48, 0.9);
   -webkit-text-stroke: 1px #A3A9AA;
+  font-size: 4em;
+}
+
+p {
+  color: #DFDFE1;
+  padding: 1rem;
+  text-align: left;
+}
+
+h3 {
+  text-align: left;
+  padding-left: 1em;
 }
 
 .carousel {
@@ -43,7 +82,7 @@ code {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; 
-  background-color: rgb(11, 19, 43, .9);
+  background-color: rgba(53, 56, 48, 0.9);
 }
 
 .car-img {
@@ -51,30 +90,32 @@ code {
   width: 350px;
   height: 510px;
 }
-  
-/* .cover-image {
-  position: relative;
-  width: 300px;     
-  height: 300px;
-  overflow: hidden;
-} */
+
+div::-webkit-scrollbar {
+  width: 2px;
+}
+ 
+div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .button {
+  background-color: #04AA6D;
+  border: none;
   color: #C3FDD6;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
- /* img {
-    position: absolute;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    top: 50%;     
-    left: 50%;
-    transform: translate( -50%, -50%);
+
+.btn {
+  margin: 20px;
 }
- img.landscape {
-   height: 100%;
-   width: auto;
-} */
 
 /* bookspage */
 .card {
@@ -91,15 +132,3 @@ code {
   border-top: 20px solid #DFDFE1;
   border-left: 35px solid #DFDFE1;
 } */
-
-div::-webkit-scrollbar {
-  width: 2px;
-}
- 
-div::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
- 
-div::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.5);
-}

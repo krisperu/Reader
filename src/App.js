@@ -75,6 +75,7 @@ function App() {
           <Formpage books={books} setBooks={setBooks}/>
         </Route>
       </Switch>
+      <div className="footer">Reader designed by: Krisitna Peru | //Flatiron School | <a href="https://github.com/krisperu">GitHub</a></div>
     </div>
   );
 }
