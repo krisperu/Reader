@@ -42,7 +42,7 @@ function Formpage({ books, setBooks }) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <h2>Add a Book</h2>
-      <div className="tit">
+      <div>
         <label for="exampleFormControlInput1" className="form-label">
           Title:
           <input className="input"
@@ -130,7 +130,7 @@ function Formpage({ books, setBooks }) {
         <label className="form-label">
           Description:
           <br/>
-          <textarea
+          <textarea className="input"
             description="description"
             value={description}
             placeholder="Book summary"
@@ -142,7 +142,7 @@ function Formpage({ books, setBooks }) {
         <label className="form-label">
           Comment/Review: 
           <br/>
-          <textarea
+          <textarea className="input"
             comment="comment"
             placeholder="What did you think?"
             value={comment}
