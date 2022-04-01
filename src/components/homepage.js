@@ -9,8 +9,8 @@ function Homepage({bookCover}) {
 
 
   return (
-    <div className="homepage">
-      <h1 className="title">Reader</h1>
+    <div className="homepage position-relative">
+      <h1 className="title position-absolute top-0 start-50 translate-middle-x">Reader</h1>
       <div className="carousel">{coverImage}</div>
       <div className="button-area">
         <Link className="button" id="authorBtn" to="/author" >Authors</Link>
