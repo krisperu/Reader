@@ -12,16 +12,14 @@ function BookContainer({ book, onDeleteBook, handleCardClick }) {
   }
 
   return (
-    <div onClick={()=> handleCardClick(book)}>
-      <div className="card">
-        <div className="image">
-          <img className="card-img-top" src={book.image} alt={book.id} />
-        </div>
-        <div className="card-title">
-          <strong>{book.title}</strong>
-        </div>
-        <button onClick={handleDeleteClick}>Delete</button>
+    <div className="card" onClick={()=> handleCardClick(book)}>
+      <div>
+        <img className="card-img" src={book.image} alt={book.id} />
       </div>
+      <div className="card-title">
+        <strong>{book.title}</strong>
+      </div>
+      <button className="del-btn" onClick={handleDeleteClick}>Delete</button>
     </div>
     
   )

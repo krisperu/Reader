@@ -13,10 +13,15 @@ function Bookspage({ books, onDeleteBook, onCardClick }) {
   ))
 
   return (
-    <div >
-      {bookItem}
-      
+    <>
+      <div className="book-header">
+        <h2>Your Books</h2>
+        <p id="books-p">Status: Read | For: All-Time</p>
       </div>
+      <div className="container">
+        {bookItem}
+      </div>
+    </>
   )
 }
 

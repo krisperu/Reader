@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: rgba(53, 56, 48);
+  background-color: rgba(28, 28, 28);
   
 }
 
@@ -24,6 +24,7 @@ code {
 
 .footer {
   color: #DFDFE1;
+  border-top: 1px solid black;
 }
 
 body::-webkit-scrollbar {
@@ -38,7 +39,6 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* homepage */
 .logo {
   color: rgba(53, 56, 48, 0.9);
   -webkit-text-stroke: 1px #A3A9AA;
@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb {
   height: 75%;
 }
 
+/* homepage */
 .homepage {
   background-image: url("../images/header-img.jpg");
   padding: 7rem;
@@ -118,17 +119,33 @@ div::-webkit-scrollbar-thumb {
 }
 
 /* bookspage */
-.card {
-  width: 18rem;
+.container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+  padding: 15px;
+}
+.card {
+  width: 18rem;
+  background-color: rgba(53, 56, 48, 0.9);
+  text-align: left;
+  color: #DFDFE1;
 }
 
-/* .book-container {
+.book-header {
+  color: #A3A9AA;
+  background-color: rgb(65, 68, 61, .9);
+  border-top: 15px solid rgba(28 ,28, 28);
+}
 
-} */
+#books-p {
+  text-align: center;
+  border-top: 1px solid #DFDFE1;
+}
 
-/* .card-body {
-  border-top: 20px solid #DFDFE1;
-  border-left: 35px solid #DFDFE1;
-} */
+.del-btn {
+  background-color: inherit;
+  border: solid 2px #DFDFE1;
+  color: #DFDFE1;
+}
