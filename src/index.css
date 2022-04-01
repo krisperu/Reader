@@ -131,6 +131,7 @@ div::-webkit-scrollbar-thumb {
   background-color: rgba(53, 56, 48, 0.9);
   text-align: left;
   color: #DFDFE1;
+  padding: 5px;
 }
 
 .book-header {
@@ -148,4 +149,12 @@ div::-webkit-scrollbar-thumb {
   background-color: inherit;
   border: solid 2px #DFDFE1;
   color: #DFDFE1;
+}
+
+/* authors */
+.author-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 30px;
+  padding: 20px;
 }
