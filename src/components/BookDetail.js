@@ -3,7 +3,7 @@ import React from 'react'
 function BookDetail({ detail }) {
   return (
     <div className="details" key={detail.id}>
-       <img class="rounded float-start" src={detail.image} />
+       <img className="rounded float-start" src={detail.image} />
        <div className="bk-det">
         <h1 className="det-title">{detail.title}</h1>
         <div className="det-desc"><strong className="strong">Author:</strong> {detail.author.name}</div>

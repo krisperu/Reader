@@ -128,7 +128,8 @@ function Formpage({ books, setBooks }) {
       </div>
       <div className="des">
         <label className="form-label">
-          Description: 
+          Description:
+          <br/>
           <textarea
             description="description"
             value={description}
@@ -140,6 +141,7 @@ function Formpage({ books, setBooks }) {
       <div className="com">
         <label className="form-label">
           Comment/Review: 
+          <br/>
           <textarea
             comment="comment"
             placeholder="What did you think?"
