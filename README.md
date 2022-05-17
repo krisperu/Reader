@@ -1,15 +1,15 @@
 # Reader
 
-Reader is a place to keep track of the books you've read. It keeps track of the book your read, the time it took you to read it, how much you enjoyed it and other information. Its a quick and easy way to keep track of all the books you've read and your thoughts on them.
+Reader is a place to keep track of the books you've read. It keeps track of the book you read, the time it took you to read it, how much you enjoyed it and other information. Its a quick and easy way to keep track of all the books you've read and your thoughts on them.
 
 ## With Reader you can:
 
 * Add a book you've read
     * Title, Author, Description, etc...
-* Add your thougts on the book
+* Add your thoughts on the book
 * Rate the book
 * Delete a book
-* See all the books you've reader
+* See all the books you've read
 * See more details on each book
 
 # Demo
